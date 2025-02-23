@@ -18,7 +18,7 @@ export const SOCIALNETWORKS = [
 
 	{
 		name: 'CV',
-		url: 'pdfs/resume.pdf',
+		url: '/pdfs/resume.pdf',
 		icon: ResumeIcon
 	}
 ] as const
