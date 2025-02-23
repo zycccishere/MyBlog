@@ -10,10 +10,10 @@ interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-	site: 'https://blog-template-gray.vercel.app/', // Write here your website url
+	site: 'https://zyccc-blog.vercel.app/', // Write here your website url
 	author: 'Zhang Yicheng', // Site author
-	title: 'Personal Blog', // Site title.
-	description: 'Meaningless thoughts and notes', // Description to display in the meta tags
+	title: "Zyccc's Blog", // Site title.
+	description: 'Welcome to my blog! I write about my experiences and thoughts.', // Description to display in the meta tags
 	lang: 'en-GB',
 	ogLocale: 'en_GB',
 	shareMessage: 'Share this post', // Message to share a post on social media
