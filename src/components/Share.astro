@@ -2,27 +2,61 @@
 import { siteConfig } from '@/data/site.config'
 import TwitterColorIcon from './icons/TwitterColorIcon.astro'
 import LinkedinColorIcon from './icons/LinkedinColorIcon.astro'
-const message = siteConfig.shareMessage
-
-const URL = Astro.url.href
+import WeiboColorIcon from './icons/WeiboColorIcon.astro'
+import QzoneColorIcon from './icons/QzoneColorIcon.astro'
+const message = encodeURIComponent(siteConfig.shareMessage)
+const URL = encodeURIComponent(Astro.url.href)
+const title = encodeURIComponent(siteConfig.title || 'My Blog')
 ---
 
 <div class='flex flex-col gap-2'>
-	<span class='mb-1 font-bold text-2xl'>Share</span>
+	<span class='mb-1 font-bold text-2xl'>分享到</span>
 	<ul class='flex gap-3 text-black dark:text-white'>
+		<!-- Twitter分享 -->
 		<li>
 			<a
 				href={`https://twitter.com/intent/tweet?text=${message + ' ' + URL}`}
-				aria-label='Share on Twitter'><TwitterColorIcon /></a
+				aria-label='分享到 Twitter'
+				target='_blank'
+				rel='noopener'
 			>
+				<TwitterColorIcon />
+			</a>
 		</li>
+		<!-- LinkedIn分享 -->
 		<li>
 			<a
 				href={`https://www.linkedin.com/shareArticle?mini=true&url=${URL}`}
-				aria-label='Share on LinkedIn'
+				aria-label='分享到 LinkedIn'
+				target='_blank'
+				rel='noopener'
 			>
-				<LinkedinColorIcon /></a
+				<LinkedinColorIcon />
+			</a>
+		</li>
+
+		<!-- 微博分享 -->
+		<li>
+			<a
+				href={`https://service.weibo.com/share/share.php?url=${URL}&title=${message}`}
+				aria-label='分享到微博'
+				target='_blank'
+				rel='noopener'
 			>
+				<WeiboColorIcon />
+			</a>
+		</li>
+
+		<!-- QQ空间分享 -->
+		<li>
+			<a
+				href={`https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=${URL}&title=${title}&summary=${message}`}
+				aria-label='分享到QQ空间'
+				target='_blank'
+				rel='noopener'
+			>
+				<QzoneColorIcon />
+			</a>
 		</li>
 	</ul>
 </div>
