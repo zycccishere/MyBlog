@@ -1,0 +1,18 @@
+---
+// 导入React组件
+import LoveLetter from './react/LoveLetter'
+
+// 获取传入的props
+const { title, messages, position, theme, heart } = Astro.props
+---
+
+<!-- client:visible 指令确保组件在可见时激活 -->
+<LoveLetter
+	title={title}
+	messages={messages}
+	position={position}
+	theme={theme}
+	heart={heart}
+	client:visible
+/>
+

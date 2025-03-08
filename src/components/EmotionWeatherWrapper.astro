@@ -1,0 +1,11 @@
+---
+// 导入React组件
+import EmotionWeather from './react/EmotionWeather'
+
+// 获取传入的props
+const { title, defaultWeather } = Astro.props
+---
+
+<!-- client:visible 指令确保组件在可见时激活 -->
+<EmotionWeather title={title} defaultWeather={defaultWeather} client:visible />
+

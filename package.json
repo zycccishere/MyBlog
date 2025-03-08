@@ -33,9 +33,22 @@
 		"prepare": "husky install"
 	},
 	"dependencies": {
+		"@astrojs/react": "^4.2.1",
 		"@astrojs/rss": "4.0.1",
+		"@react-spring/web": "^9.7.5",
+		"@react-three/drei": "9.99.3",
+		"@react-three/fiber": "8.15.19",
 		"astro": "4.0.8",
-		"astro-font": "^0.0.72"
+		"astro-font": "^0.0.72",
+		"framer-motion": "^12.4.10",
+		"katex": "^0.16.21",
+		"react": "18.2.0",
+		"react-dnd": "^16.0.1",
+		"react-dnd-html5-backend": "^16.0.1",
+		"react-dom": "18.2.0",
+		"rehype-katex": "^7.0.1",
+		"remark-math": "^6.0.0",
+		"three": "^0.174.0"
 	},
 	"devDependencies": {
 		"@astrojs/mdx": "2.0.3",

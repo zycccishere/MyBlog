@@ -2,10 +2,109 @@
 heroImage: /src/assets/images/15301740310613_.pic_hd.jpg
 category: Life
 description: A story about fate and beautiful coincidences.
-pubDate: 2025-02-22T16:00:00.000Z
+pubDate: 2025-03-07T16:00:00.000Z
 tags:
   - Couple's Daily
 title: Serendipity.
 ---
 
-## A begin post
+import HeartLikeWrapper from '../../../components/HeartLikeWrapper.astro'
+import LetterWrapper from '../../../components/LetterWrapper.astro'
+import DestinyLineWrapper from '../../../components/DestinyLineWrapper.astro'
+import LovePuzzleWrapper from '../../../components/LovePuzzleWrapper.astro'
+import MemoryAlbumWrapper from '../../../components/MemoryAlbumWrapper.astro'
+
+<LetterWrapper
+	title='这是一封情书'
+	messages={['你好，王梓涵', '做我女朋友吧王梓涵', '好不好呀好不好呀😘']}
+	theme='pink'
+	heart='true'
+/>
+## 美丽的巧合
+
+人生中有许多美丽的巧合，而最美的巧合莫过于与你相遇。就像是命运早已安排好的剧本，我们在最恰当的时间、最合适的地点相遇，开始了我们的故事。
+
+这不仅仅是简单的偶然，而是命运精心编织的奇迹。每一次回想起我们相遇的那一刻，心中都会涌起无限感动和感恩。
+
+---
+
+## 样式一
+
+<MemoryAlbumWrapper
+	title='我们的回忆册'
+	photos={[
+		{
+			src: '/pics/yingxiaohao.png',
+			caption: '第一次相遇'
+		},
+		{
+			src: '/pics/chaoyanggongyuan.png',
+			caption: '第一次约会'
+		},
+		{
+			src: '/pics/renda.png',
+			caption: '在一起'
+		},
+		{
+			src: '/pics/tianjin.png',
+			caption: '第一次旅游'
+		}
+	]}
+/>
+
+---
+
+## 样式二
+
+<DestinyLineWrapper
+	title='我们的缘分线'
+	events={[
+		{
+			date: '2024年4月27日',
+			title: '初次相遇',
+			description: '感谢营销号。',
+			image: '/pics/yingxiaohao.png'
+		},
+		{
+			date: '2024年5月8日',
+			title: '第一次约会',
+			description: '朝阳公园的夕阳是泛红脸颊和落日飞车。',
+			image: '/pics/chaoyanggongyuan.png'
+		},
+		{
+			date: '2024年5月10日',
+			title: '在一起',
+			description: '人大的晚霞很美，我们在一起了。',
+			image: '/pics/renda.png'
+		},
+		{
+			date: '2024年6月22日',
+			title: '第一次旅游',
+			description: '2025年6月22日记得取明信片。',
+			image: '/pics/tianjin.png'
+		}
+	]}
+/>
+
+## 命中注定的相遇
+
+<LovePuzzleWrapper
+	image='/pics/couple.png'
+	title='最美合照'
+	message='完成华容道，揭开我们的甜蜜秘密！'
+	difficulty='easy'
+/>
+
+<LovePuzzleWrapper
+	image='/pics/hezhao2.jpg'
+	title='再来一张难一点的！'
+	message='完成华容道，揭开我们的甜蜜秘密！'
+	difficulty='medium'
+/>
+## 感谢有你
+
+爱情是一场奇妙的旅程，而与你同行的每一天都充满了惊喜和幸福。感谢你的出现，让我的生活变得更加美好和有意义。
+
+无论未来如何，我都会珍惜与你在一起的每一刻，期待我们一起创造更多美好的回忆。
+
+<HeartLikeWrapper title='喜欢这个故事吗？' />

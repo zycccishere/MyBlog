@@ -1,0 +1,12 @@
+---
+// 导入React组件
+import LovePuzzle from './react/LovePuzzle'
+
+// 获取传入的props
+const { title, image, message, difficulty } = Astro.props
+---
+
+<div>
+	<LovePuzzle title={title} image={image} message={message} difficulty={difficulty} client:load />
+</div>
+

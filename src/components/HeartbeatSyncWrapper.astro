@@ -1,0 +1,17 @@
+---
+// 导入React组件
+import HeartbeatSync from './react/HeartbeatSync'
+
+// 获取传入的props
+const { title, secretMessage, secretBpm, tolerance } = Astro.props
+---
+
+<!-- client:visible 指令确保组件在可见时激活 -->
+<HeartbeatSync
+	title={title}
+	secretMessage={secretMessage}
+	secretBpm={secretBpm}
+	tolerance={tolerance}
+	client:visible
+/>
+

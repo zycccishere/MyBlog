@@ -1,0 +1,11 @@
+---
+// 导入React组件
+import TimeMachine from './react/TimeMachine'
+
+// 获取传入的props
+const { title, events } = Astro.props
+---
+
+<!-- client:visible 指令确保组件在可见时激活 -->
+<TimeMachine title={title} events={events} client:visible />
+
